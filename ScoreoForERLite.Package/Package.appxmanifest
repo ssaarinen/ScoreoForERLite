@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  xmlns:uap18="http://schemas.microsoft.com/appx/manifest/uap/windows10/18"
+  IgnorableNamespaces="uap rescap uap18">
+
+  <Identity
+    Name="SSaarinen.ScoreOForEResultsLite"
+    Publisher="CN=DC103E05-E903-4BBF-AEA9-DC933C5C4AA1"
+    Version="1.0.12.0" />
+
+  <Properties>
+    <DisplayName>ScoreOForEResultsLite</DisplayName>
+    <PublisherDisplayName>SSaarinen</PublisherDisplayName>
+    <Logo>Img\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14393.0" MaxVersionTested="10.0.14393.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="$targetentrypoint$" uap18:TrustLevel="mediumIL" uap18:RuntimeBehavior="packagedClassicApp">
+      <uap:VisualElements
+        DisplayName="ScoreO for EResults Lite"
+        Description="Score-O / Rogaining scoring for EResults Lite competitions"
+        BackgroundColor="transparent"
+        Square150x150Logo="Img\Square150x150Logo.png"
+        Square44x44Logo="Img\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Img\Wide310x150Logo.png"  Square71x71Logo="Img\SmallTile.png" Square310x310Logo="Img\LargeTile.png" ShortName="Score-O for EResults Lite">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+            <uap:ShowOn Tile="square310x310Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile >
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/></uap:InitialRotationPreference>
+        <uap:SplashScreen Image="Img\SplashScreen.png"/>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+</Package>
