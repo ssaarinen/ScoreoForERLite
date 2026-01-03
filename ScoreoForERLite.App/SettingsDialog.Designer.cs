@@ -32,7 +32,7 @@
             statusStrip1 = new StatusStrip();
             settingsToolStripStatusLabel = new ToolStripStatusLabel();
             menuStrip1 = new MenuStrip();
-            toolStripMenuItem1 = new ToolStripMenuItem();
+            actionsToolStripMenuItem = new ToolStripMenuItem();
             loadFromCompetitionToolStripMenuItem = new ToolStripMenuItem();
             copyToClipboardToolStripMenuItem = new ToolStripMenuItem();
             statusStrip1.SuspendLayout();
@@ -71,19 +71,19 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { actionsToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(804, 33);
             menuStrip1.TabIndex = 2;
             menuStrip1.Text = "menuStrip1";
             // 
-            // toolStripMenuItem1
+            // actionsToolStripMenuItem
             // 
-            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { loadFromCompetitionToolStripMenuItem, copyToClipboardToolStripMenuItem });
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(107, 29);
-            toolStripMenuItem1.Text = "Toiminnot";
+            actionsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { loadFromCompetitionToolStripMenuItem, copyToClipboardToolStripMenuItem });
+            actionsToolStripMenuItem.Name = "actionsToolStripMenuItem";
+            actionsToolStripMenuItem.Size = new Size(107, 29);
+            actionsToolStripMenuItem.Text = "Toiminnot";
             // 
             // loadFromCompetitionToolStripMenuItem
             // 
@@ -127,7 +127,7 @@
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel settingsToolStripStatusLabel;
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem actionsToolStripMenuItem;
         private ToolStripMenuItem loadFromCompetitionToolStripMenuItem;
         private ToolStripMenuItem copyToClipboardToolStripMenuItem;
     }

@@ -317,4 +317,19 @@ Esim. 31,32:9,33:5,80,100</value>
   <data name="About_Description" xml:space="preserve">
     <value>Score-O / Rogaining tuloslaskenta EResults Litelle</value>
   </data>
+  <data name="SettingsDialog_Actions" xml:space="preserve">
+    <value>Toiminnot</value>
+  </data>
+  <data name="SettingsDialog_CopyToClipboard" xml:space="preserve">
+    <value>Kopioi leikepöydälle</value>
+  </data>
+  <data name="SettingsDialog_LoadFromCompetition" xml:space="preserve">
+    <value>Lataa kilpailutiedostosta</value>
+  </data>
+  <data name="ExportToHtmlDialog_ButtonCancel" xml:space="preserve">
+    <value>Peruuta</value>
+  </data>
+  <data name="ExportToHtmlDialog_ButtonOk" xml:space="preserve">
+    <value>Vie</value>
+  </data>
 </root>

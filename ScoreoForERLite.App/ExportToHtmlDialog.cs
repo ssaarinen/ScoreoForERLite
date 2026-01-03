@@ -34,6 +34,8 @@ namespace ScoreoForERLite.App
             labelResultsFile.Text = Resources.I18N.ExportToHtmlDialog_ResultsFile;
             labelSplitsFile.Text = Resources.I18N.ExportToHtmlDialog_SplitsFile;
             labelResultsTitle.Text = Resources.I18N.ExportToHtmlDialog_ResultsTitle;
+            buttonOk.Text = Resources.I18N.ExportToHtmlDialog_ButtonOk;
+            buttonCancel.Text = Resources.I18N.ExportToHtmlDialog_ButtonCancel;
         }
 
         private void ButtonBrowseResults_Click(object sender, EventArgs e)

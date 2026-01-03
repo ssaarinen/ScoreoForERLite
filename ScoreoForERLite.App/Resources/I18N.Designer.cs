@@ -97,6 +97,24 @@ namespace ScoreoForERLite.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string ExportToHtmlDialog_ButtonCancel {
+            get {
+                return ResourceManager.GetString("ExportToHtmlDialog_ButtonCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export.
+        /// </summary>
+        internal static string ExportToHtmlDialog_ButtonOk {
+            get {
+                return ResourceManager.GetString("ExportToHtmlDialog_ButtonOk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to html files (*.html)|*.html|All files (*.*)|*.*.
         /// </summary>
         internal static string ExportToHtmlDialog_Filter {
@@ -611,6 +629,33 @@ namespace ScoreoForERLite.App.Resources {
         internal static string SettingsCopiedClipboard {
             get {
                 return ResourceManager.GetString("SettingsCopiedClipboard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Actions.
+        /// </summary>
+        internal static string SettingsDialog_Actions {
+            get {
+                return ResourceManager.GetString("SettingsDialog_Actions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy to clipboard.
+        /// </summary>
+        internal static string SettingsDialog_CopyToClipboard {
+            get {
+                return ResourceManager.GetString("SettingsDialog_CopyToClipboard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Load from competition file.
+        /// </summary>
+        internal static string SettingsDialog_LoadFromCompetition {
+            get {
+                return ResourceManager.GetString("SettingsDialog_LoadFromCompetition", resourceCulture);
             }
         }
         

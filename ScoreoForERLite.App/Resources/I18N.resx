@@ -317,4 +317,19 @@ e.g 31,32:9,33:5,80,100</value>
   <data name="About_Description" xml:space="preserve">
     <value>Score-O / Rogaining scores for EResults Lite</value>
   </data>
+  <data name="SettingsDialog_Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="SettingsDialog_CopyToClipboard" xml:space="preserve">
+    <value>Copy to clipboard</value>
+  </data>
+  <data name="SettingsDialog_LoadFromCompetition" xml:space="preserve">
+    <value>Load from competition file</value>
+  </data>
+  <data name="ExportToHtmlDialog_ButtonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ExportToHtmlDialog_ButtonOk" xml:space="preserve">
+    <value>Export</value>
+  </data>
 </root>
