@@ -37,6 +37,9 @@ namespace ScoreoForERLite.App
         private void UpdateI18N()
         {
             Text = Resources.I18N.SettingsDialog_Title;
+            actionsToolStripMenuItem.Text = Resources.I18N.SettingsDialog_Actions;
+            loadFromCompetitionToolStripMenuItem.Text = Resources.I18N.SettingsDialog_LoadFromCompetition;
+            copyToClipboardToolStripMenuItem.Text = Resources.I18N.SettingsDialog_CopyToClipboard;
         }
 
         private void CopyToClipboard()
