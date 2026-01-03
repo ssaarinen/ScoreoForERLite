@@ -43,6 +43,7 @@ namespace ScoreoForERLite.App
             //toolStripMenuAlwaysOnTop.Image = SystemIcons.GetStockIcon(StockIconId.Stack, StockIconOptions.SmallIcon).ToBitmap();
             //toolStripMenuItemAutoShowLatest.Image = SystemIcons.GetStockIcon(StockIconId.AutoList, StockIconOptions.SmallIcon | StockIconOptions.Selected).ToBitmap();
             toolStripMenuAbout.Image = SystemIcons.GetStockIcon(StockIconId.Help, StockIconOptions.SmallIcon).ToBitmap();
+            instructionsToolStripMenuItem.Image = SystemIcons.GetStockIcon(StockIconId.MyNetwork, StockIconOptions.SmallIcon).ToBitmap();
         }
 
         private void UpdateI18N()
@@ -58,6 +59,7 @@ namespace ScoreoForERLite.App
             toolStripMenuAlwaysOnTop.Text = Resources.I18N.MenuItem_AlwaysOnTop;
             toolStripMenuItemAutoShowLatest.Text = Resources.I18N.MenuItem_AutoShowLatest;
             helpToolStripMenuItem.Text = Resources.I18N.MenuItem_Help;
+            instructionsToolStripMenuItem.Text = Resources.I18N.MenuItem_Instructions;
             toolStripMenuAbout.Text = Resources.I18N.MenuItem_About;
 
             rankDataGridViewTextBoxColumn.HeaderText = Resources.I18N.MainGridHeader_Rank;
@@ -77,12 +79,12 @@ namespace ScoreoForERLite.App
 
         public void UpdateResults()
         {
-            
+
             lastUpdatedToolStripStatus.Text = $"{DateTime.Now}";
             resultsToolStripStatus.Text = $"{_model.Results.Count}";
             eventDetailsToolStripStatus.Text = _model.LatestCompetition != null ?
                 string.Join(" - ", new[] { _model.LatestCompetition.Date, _model.LatestCompetition.Name }.Where(item => !string.IsNullOrWhiteSpace(item))) : "";
-            
+
             if (_model.LastUpdatedResultIndex >= 0)
             {
                 dataGridView1.Rows[_model.LastUpdatedResultIndex].Selected = true;
@@ -139,7 +141,7 @@ namespace ScoreoForERLite.App
                 using ExportToHtmlDialog exportDialog = new(_model.LatestCompetition);
                 if (exportDialog.ShowDialog() == DialogResult.OK)
                 {
-                    
+
                     var resultsView = _model.LatestResults.Select(item => item.AsResultsView(Resources.I18N.NoNameName)).ToList();
 
                     String html = ScoreOResultsImport.ImportResultsToHtml(Resources.I18N.Export_Results_Title + " " + exportDialog.ResultsTitle, resultsView);
@@ -201,7 +203,7 @@ namespace ScoreoForERLite.App
             }
 
         }
-        
+
         private void DataGridView1_CellDoubleClick(object? sender, DataGridViewCellEventArgs e)
         {
             ShowResultDetails(e.RowIndex);
@@ -225,6 +227,22 @@ namespace ScoreoForERLite.App
             }
         }
 
-        
+        private void InstructionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(
+                    new System.Diagnostics.ProcessStartInfo
+                    {
+                        FileName = Resources.I18N.MenuItem_Instructions_link,
+                        UseShellExecute = true
+                    }
+                );
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(string.Format(Resources.I18N.MenuItem_Instructions_Link_Failure, Resources.I18N.MenuItem_Instructions_link) + ". \n" + ex.Message, ":(");
+            }
+        }
     }
 }
