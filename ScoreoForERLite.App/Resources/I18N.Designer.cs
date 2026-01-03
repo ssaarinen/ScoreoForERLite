@@ -331,6 +331,33 @@ namespace ScoreoForERLite.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Instructions (online).
+        /// </summary>
+        internal static string MenuItem_Instructions {
+            get {
+                return ResourceManager.GetString("MenuItem_Instructions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://github.com/ssaarinen/ScoreoForERLite/blob/master/docs.
+        /// </summary>
+        internal static string MenuItem_Instructions_link {
+            get {
+                return ResourceManager.GetString("MenuItem_Instructions_link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not open {0} in browser..
+        /// </summary>
+        internal static string MenuItem_Instructions_Link_Failure {
+            get {
+                return ResourceManager.GetString("MenuItem_Instructions_Link_Failure", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Open.
         /// </summary>
         internal static string MenuItem_Open {

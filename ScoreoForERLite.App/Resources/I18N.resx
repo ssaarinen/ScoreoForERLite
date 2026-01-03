@@ -332,4 +332,13 @@ e.g 31,32:9,33:5,80,100</value>
   <data name="ExportToHtmlDialog_ButtonOk" xml:space="preserve">
     <value>Export</value>
   </data>
+  <data name="MenuItem_Instructions" xml:space="preserve">
+    <value>Instructions (online)</value>
+  </data>
+  <data name="MenuItem_Instructions_link" xml:space="preserve">
+    <value>https://github.com/ssaarinen/ScoreoForERLite/blob/master/docs</value>
+  </data>
+  <data name="MenuItem_Instructions_Link_Failure" xml:space="preserve">
+    <value>Could not open {0} in browser.</value>
+  </data>
 </root>
