@@ -8,6 +8,10 @@ to generate the final results after the event.
 Like EResults Lite, this extension is targeted to recreational events and small "competitions". For larger events
 or more advanced features, consider using specialized software designed for these event types.
 
+# Installation
+1. Ensure you have [EResults Lite (v4)](https://www.oriento.fi/eresults/lite) installed and set up.
+1. Download ScoreO for EResults Lite from [Microsoft Store](https://apps.microsoft.com/detail/9n50r1gndn4t)
+
 # Instructions
 
 For detailed user instructions, see the [instructions](docs/instructions.md) (English) or [ohjeet](docs/ohjeet.md) (Finnish).
@@ -35,6 +39,10 @@ EResults Lite vastaanottaa tuloksia, sekä lopullisten tulosten luomiseen tapahtu
 
 Kuten EResults Lite, tämä laajennus on suunnattu harrastetapahtumiin ja pieniin "kilpailuihin". Suurempia tapahtumia
 tai edistyneempiä ominaisuuksia varten kannattaa harkita näihin tapahtumatyyppeihin suunniteltuja erikoisohjelmistoja.
+
+# Asennus
+1. Varmista, että sinulla on [EResults Lite (v4)](https://www.oriento.fi/eresults/lite) asennettuna.
+1. Lataa ScoreO EResults Litelle [Microsoft Storesta](https://apps.microsoft.com/detail/9n50r1gndn4t).
 
 # Ohjeet
 
