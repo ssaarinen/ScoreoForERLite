@@ -1,0 +1,10 @@
+<Project>
+	<PropertyGroup>
+		<MinVerMinimumMajorMinor>1.0</MinVerMinimumMajorMinor>
+		<MinVerVerbosity>detailed</MinVerVerbosity>
+	</PropertyGroup>
+	
+	<ItemGroup>
+	  <PackageReference Include="MinVer" Version="7.0.0" PrivateAssets="All" />
+	</ItemGroup>
+</Project>

@@ -10,7 +10,7 @@ namespace ScoreoForERLite.App
             var title = Resources.I18N.AppName;
             this.Text = String.Format("About {0}", title);
             this.labelProductName.Text = title;
-            this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
+            this.labelVersion.Text = String.Format("Version {0}", AssemblyFileVersion);
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = Resources.I18N.About_Description;
@@ -18,13 +18,29 @@ namespace ScoreoForERLite.App
 
         #region Assembly Attribute Accessors
 
-        
+
 
         public string AssemblyVersion
         {
             get
             {
                 return Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "Unknown";
+            }
+        }
+
+        public string AssemblyFileVersion
+        {
+            get
+            {
+                return Assembly.GetExecutingAssembly().GetCustomAttribute<AssemblyFileVersionAttribute>()?.Version ?? "Unknown";
+            }
+        }
+
+        public string AssemblyInformationalVersion
+        {
+            get
+            {
+                return Assembly.GetExecutingAssembly().GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion ?? "Unknown";
             }
         }
 
