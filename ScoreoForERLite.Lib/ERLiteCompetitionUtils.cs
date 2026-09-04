@@ -111,11 +111,11 @@ namespace ScoreoForERLite.Lib
                 // flag to determine if there are punches after the finish control and before reader
                 var finishControlReached = false;
                 var prevTime = 0L;
+                var punched = new HashSet<string>(nonControlCodes);
                 foreach (var punch in punchList)
                 {
                     var isFinishCode = punch.PunchCode == finishCode;
                     var isZeroCode = punch.PunchCode == zeroCode;
-                    var punched = new HashSet<string>(nonControlCodes);
                     var codeLegit = int.TryParse(punch.PunchCode, out int code);
                     var score = codeLegit && !punched.Contains(punch.PunchCode) && !finishControlReached && opts.ControlsToPoints.TryGetValue(code, out int value) ? value : 0;
                     runningScore += score;
